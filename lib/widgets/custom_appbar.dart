@@ -6,7 +6,7 @@ import 'package:flutter_screenutil/flutter_screenutil.dart';
 import 'package:get/get.dart';
 
 class CustomAppBarWithSwitch extends StatelessWidget {
-  final SwitchController switchController = Get.put(SwitchController());
+  final BluetoothController switchController = Get.put(BluetoothController());
 
   CustomAppBarWithSwitch({super.key});
 

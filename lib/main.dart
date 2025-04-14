@@ -10,6 +10,7 @@ class MyApp extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
+    ScreenUtil.ensureScreenSize();
     return ScreenUtilInit(
       designSize: const Size(360, 800),
       minTextAdapt: true,
@@ -18,7 +19,6 @@ class MyApp extends StatelessWidget {
         return GetMaterialApp(
           debugShowCheckedModeBanner: false,
           title: 'Bluetooth',
-          // getPages: AppRoutes.appRoutes(),
           theme: ThemeData(
             primarySwatch: Colors.blue,
             textTheme: Typography.englishLike2018.apply(fontSizeFactor: 1.sp),
